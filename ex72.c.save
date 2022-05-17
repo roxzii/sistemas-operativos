@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <errno.h>
+#define BUFFSIZE 128
+
+void ioCopy(int fdIn, int fdOut)
+main(int argc, char *argv[])
+{
+	
+
+	fdIn = open(argv[1]);
+	if (fdIn < 0){
+		perror("Erro ao abrir ficheiro\n");
+	}
+	fdOut = creat(argv[2]);
+	
+void ioCopy(fdIn, fdOut)
+{
+	int n;
+	char buf[BUFFSIZE];
+	while((n = read (fdIn, buf, BUFFSIZE)) > 0)
+	{
+		if (write(fdOut, buf, n) != n)
+		{
+			perror("Erro de escrita\n");
+		}
+	if (n < 0)
+	{
+		perror("Erro de leitura\n");
+	}
+}
+
