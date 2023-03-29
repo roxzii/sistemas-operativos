@@ -37,6 +37,6 @@ int main(int argv, char* argc[]){
         printf("NG\n");
     }   else if (compare(argc[1], "NE") == true){
         printf("NE\n");
-    }   else printf("Comando desconhecido\n");
+    }   else printf("Protocolo desconhecido\n");
     return 0;
 }
